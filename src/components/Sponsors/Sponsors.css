@@ -1,0 +1,27 @@
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #F6FFF7;
+    width: 100%;
+}
+
+.sponsors h1 {
+    font-size: 32px;
+    font-family: "Inter";
+}
+
+.sponsor-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.sponsor-lists img {
+    width: auto;
+    height: 100px;
+}

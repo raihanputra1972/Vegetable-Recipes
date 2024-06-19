@@ -1,0 +1,33 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:40rem;
+  position: fixed;
+  width: 100%;
+  font-family: "Inter";
+  padding: 15px 0px 15px 0px;
+  z-index: 1;
+}
+
+.navbar img {
+  width: 150px;
+  }
+  
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5rem;
+  font-weight: 500;
+}
+  
+.navbar ul li {
+  display: inline;
+}
+  
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}

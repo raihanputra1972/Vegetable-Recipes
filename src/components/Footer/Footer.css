@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #00bfff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

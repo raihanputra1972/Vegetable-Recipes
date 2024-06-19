@@ -1,0 +1,105 @@
+.home {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    background-color: #E1FFE4;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+/* .hero-rectangle {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    background: linear-gradient(248deg, #AADDAF 0%, #66B06E 100%);
+} */
+
+.hero img{
+    height: 630px;
+    padding-left: 100px;
+    filter: drop-shadow(10px 10px 15px black);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1{
+    font-family: "Pacifico";
+    font-size: 80px;
+}
+
+.title h2 {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.title h3 {
+    font-family: "Inter";
+    padding-left: 8rem;
+    padding-right: 8rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* CARDS */
+.recipe-categories {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6FFF7;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: "Inter";
+}
+
+.recipe-categories-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.recipe-categories-title h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    width: 277px;
+    height: 384px;
+    border-radius: 15px;
+    background-color: #66B06E;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.card p{
+    font-size: 25px;
+    padding: 0px 50px 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card img {
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}

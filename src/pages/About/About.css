@@ -1,0 +1,45 @@
+.about {
+  font-family: "Inter";
+  padding-top: 10rem;
+  padding-left: 12rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  background-color: #f6fff7;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us p {
+  padding-right: 23rem;
+}
+
+.founder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.founder img {
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.founder p {
+  padding-right: 24rem;
+}
+
+.meet-team p {
+  padding-right: 23rem;
+}
