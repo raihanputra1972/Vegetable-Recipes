@@ -7,6 +7,11 @@ import logoDiff from "../../assets/Photo/Logo/cook.png";
 
 function StirFries() {
   const [query, setQuery] = useState("");
+  const [activeRecipe, setActiveRecipe] = useState(null);
+
+  const closePopup = () => {
+    setActiveRecipe(null);
+  };
 
   console.log(query);
   return (
@@ -21,7 +26,7 @@ function StirFries() {
       <div className="recipes">
         {Recipe.filter((item) =>
           item.Title.toLowerCase().includes(query.toLowerCase())
-        ).map((item) => (
+        ).map((item, key) => (
           <div className="recipe" key={item.Title}>
             <img src={item.Image} alt="" />
             <div className="title-desc">
@@ -36,14 +41,35 @@ function StirFries() {
                   <img src={logoDiff} alt="Difficulty" />
                   <h3>{item.Diff}</h3>
                 </div>
-                <button className="button-48" role="button">
-                  <span className="text">See Recipe</span>
-                </button>
+                <div>
+                  <button
+                    className="button-48"
+                    role="button"
+                    onClick={() => {
+                      setActiveRecipe(activeRecipe === key ? null : key);
+                    }}
+                  >
+                    <span className="text">See Recipe</span>
+                  </button>
+                </div>
+              </div>
+              <div className={`pop-up ${activeRecipe === key ? "active" : ""}`}>
+                {activeRecipe === key && (
+                  <div>
+                    <button className="close-btn" onClick={closePopup}>
+                      &times;
+                    </button>
+                    <div>{item.Recipe}</div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         ))}
       </div>
+      {activeRecipe !== null && (
+        <div className="overlay active" onClick={closePopup}></div>
+      )}
     </div>
   );
 }

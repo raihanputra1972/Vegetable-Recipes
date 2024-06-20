@@ -1,33 +1,54 @@
-.navbar {
+nav {
   background-color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap:40rem;
-  position: fixed;
-  width: 100%;
-  font-family: "Inter";
-  padding: 15px 0px 15px 0px;
-  z-index: 1;
+  padding: 1rem 2rem;
+  font-family: "Inter", sans-serif;
+  position: sticky;
+  top: 0;
+  padding-inline: 11rem;
+  z-index: 1000;
 }
 
-.navbar img {
+nav img {
   width: 150px;
-  }
-  
-.navbar ul {
+}
+
+nav ul {
   list-style-type: none;
   display: flex;
-  gap: 5rem;
-  font-weight: 500;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
-  
-.navbar ul li {
-  display: inline;
+
+nav ul li {
+  display: inline-block;
+  position: relative;
 }
-  
-.navbar ul li a {
+
+nav ul li a {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav select {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+nav select option {
+  padding: 0.5rem;
 }
