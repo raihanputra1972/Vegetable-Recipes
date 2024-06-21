@@ -8,7 +8,7 @@ import image7 from "../../assets/Photo/StirFries/Stir-Fried Mixed Vegetables.jpg
 import image8 from "../../assets/Photo/StirFries/Stir-Fried Spinach with Tofu.jpg";
 import image9 from "../../assets/Photo/StirFries/Stir-Fried Zucchini with Sesame Seeds.jpg";
 
-export const Recipe = [
+export const Recipes = [
   {
     Image: image1,
     Title: "Stir-Fried Broccoli with Garlic",

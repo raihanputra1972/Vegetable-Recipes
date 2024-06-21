@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./StirFries.css";
-import { Recipe } from "./StirFriesData";
+import { Recipes } from "./StirFriesData";
 
 import logoTime from "../../assets/Photo/Logo/clock.png";
 import logoDiff from "../../assets/Photo/Logo/cook.png";
@@ -24,7 +24,7 @@ function StirFries() {
         onChange={(e) => setQuery(e.target.value)}
       />
       <div className="recipes">
-        {Recipe.filter((item) =>
+        {Recipes.filter((item) =>
           item.Title.toLowerCase().includes(query.toLowerCase())
         ).map((item, key) => (
           <div className="recipe" key={item.Title}>
