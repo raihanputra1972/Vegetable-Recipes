@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { aboutUs, Founder, Team, descTeam } from "./AboutData";
+import Contact from "../../components/Contact/Contact";
 
 import Sponsors from "../../components/Sponsors/Sponsors";
 
@@ -37,6 +38,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Contact />
       <Sponsors />
     </div>
   );
