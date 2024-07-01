@@ -12,7 +12,9 @@ function navbar() {
 
   return (
     <nav className="navbar">
-      <img src={logoGreen} alt="Logo" />
+      <a href="/">
+        <img src={logoGreen} alt="Logo" />
+      </a>
       <ul>
         <li>
           <a href="/">Home</a>

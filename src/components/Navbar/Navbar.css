@@ -9,6 +9,7 @@ nav {
   top: 0;
   padding-inline: 11rem;
   z-index: 1000;
+  text-align: center;
 }
 
 nav img {
